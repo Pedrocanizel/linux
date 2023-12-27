@@ -1,0 +1,5 @@
+cp /mnt/c/Users/seu usuario/Downloads/nome_certificado.crt /usr/local/share/ca-certificates/
+cp /mnt/c/Users/seu usuario/Downloads/nome_certificado.crt /usr/local/share/ca-certificates/
+
+sudo chmod 644  /usr/local/share/ca-certificates/
+update-ca-certificates
