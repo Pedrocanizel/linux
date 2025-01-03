@@ -1,0 +1,1 @@
+cat snowflake_*.sql | grep -E -e "GRANT ROLE.+ USER" | perl -pe "s/GRANT ROLE.+ USER(.+);/\1/" | perl -pe 's/"//g' | sort | uniq | perl -pe "s/ //g" > users_script
